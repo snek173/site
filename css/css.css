@@ -1,0 +1,296 @@
+/*     font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+*, 
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: block;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+header, 
+nav, 
+section, 
+article, 
+aside, 
+footer {
+  display: block
+}
+
+.header{
+    height: 56px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #d7d7d7;
+}
+.content{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    margin: 19px 0 19px;
+    max-width: 100%;
+}
+
+
+.url-soz{
+   float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.url-soz li{
+    float: left;
+    border-left: 1px solid #d7d7d7;
+    padding: 18px 0px;
+    width: 59px;
+    text-align: center;
+}
+.url-soz li:last-child{
+    border-right: 1px solid #d7d7d7;
+    
+}
+.url-soz li a{
+color: #c4c4c4;
+font-size: 20px;
+font-weight: 400;
+-webkit-transition: all 1s ease-in;
+-moz-transition: all 1s ease-in;
+-ms-transition: all 1s ease-in;
+-o-transition: all 1s ease-in;
+transition: all 1s ease-in;
+
+}
+.url-soz li:hover a{
+    color: #f26868;
+}
+.slider{
+position: relative;
+width: 100%;
+min-height: 400px;
+box-shadow: 0 1px 0 #d7d7d7;
+overflow: hidden;
+}
+.slider .imbg{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    background: #f8f8f8 url("img/patern.png");
+    opacity: 0.6;
+    z-index: -1;
+}
+p.shead{
+color: #616060;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    line-height: 0px;
+    padding-top: 81px;
+    text-align: center;
+}
+p.shead b:first-child{font-weight: 300;}
+p.shead > b + b{font-weight: 400;}
+
+.stext{
+width: 394px;
+margin: 0 auto;
+color: #8a8a8a;
+font-family: Lato, sans-serif;
+font-size: 15px;
+font-weight: 400;
+text-align: center;
+padding-top: 7px;
+}
+
+.btnwin{
+   width: 100%;
+  text-align: center;
+    margin-top: 72px;
+-webkit-transition: all 1.2s ease-in;
+-moz-transition: all 1.2s ease-in;
+-ms-transition: all 1.2s ease-in;
+-o-transition: all 1.2s ease-in;
+transition: all 1.2s ease-in;
+}
+a.btnred{
+padding: 11px 59px;
+background-color: #f26868;
+border: 3px solid #e25959;
+border-radius: 2px;
+color: #f8f8f8;
+font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase;
+text-decoration: none;
+}
+.btnwin:hover{
+-moz-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+-o-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+}
+
+.footer{
+height: 62px;
+background-color: white;
+     margin: 0;padding: 0;
+}
+
+.logo1{
+    float: left;
+    margin: 22px 0 22px 0px;
+}
+
+.navfooter{
+    float: right;
+    list-style: none;
+}
+.navfooter li{
+    float: left;
+    padding: 10px 10px;
+}
+.navfooter li:after{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -2px;
+    content: "-";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8c8b8b;
+}
+.navfooter li:last-child::after{
+    content: '';
+}
+.navfooter li a{
+color: #8c8b8b;
+font-family: 'Open Sans', sans-serif;
+font-size: 12px;
+font-weight: 400;
+text-decoration: none;
+-webkit-transition: all 0.5s ease-in;
+-moz-transition: all 0.5s ease-in;
+-ms-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+.navfooter li a:hover{
+    color: #f26868;
+}
+
+
+.body, .wrap-block{
+    width: 100%;
+}
+.wraptop{
+    margin-top: 75px;
+    padding-bottom: 135px;
+}
+
+.imgauto{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.block-head{
+color: #6b6b6b;
+font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 37px;
+text-transform: uppercase;
+padding-left: 8px
+}
+
+.block-text{
+color: #9d9c9c;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+padding: 15px 0 0 11px;
+}
+
+.restul{
+    padding: 0;
+}
+
+[class*="block-"]:last-child{
+    margin-right: 0px;
+}
+
+[class*="block-"]{
+    float: left;
+    margin-right: 12px;
+    
+}
+
+.block-2{
+    width: 192px;
+}
+.block-4{
+    width: 396px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
